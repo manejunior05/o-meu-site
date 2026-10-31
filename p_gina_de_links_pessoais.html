@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Links Oficiais</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col items-center justify-center p-4">
+
+    <!-- Card Container -->
+    <div class="w-full max-w-md bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl space-y-6 text-center relative overflow-hidden">
+        
+        <!-- Glow Effect Background -->
+        <div class="absolute -top-16 -left-16 w-32 h-32 bg-indigo-600/30 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-16 -right-16 w-32 h-32 bg-purple-600/30 rounded-full blur-3xl pointer-events-none"></div>
+
+        <!-- Profile Section -->
+        <div class="relative space-y-3">
+            <div class="relative w-28 h-28 mx-auto">
+                <img id="avatar" src="junior.png.png" onerror="this.src='https://placehold.co/200x200/4f46e5/ffffff?text=Junior+Man%C3%A9'" alt="Foto de Junior Mané" class="w-full h-full rounded-full object-cover border-4 border-indigo-500/40 shadow-xl">
+                <div class="absolute bottom-1 right-1 bg-emerald-500 border-2 border-slate-900 rounded-full p-1.5 text-white text-[11px] font-bold" title="Perfil Verificado">
+                    ✓
+                </div>
+            </div>
+            
+            <div>
+                <h1 id="profile-name" class="text-2xl font-extrabold text-white tracking-tight">Junior Mané</h1>
+                <p id="profile-bio" class="text-xs text-slate-300 font-medium mt-1 leading-relaxed">Criador de Conteúdo & Perfil Oficial 🚀</p>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 bg-indigo-500/10 border border-indigo-500/30 rounded-full text-[11px] text-indigo-300 font-semibold mt-2">
+                    ✨ Presença Digital Oficial
+                </div>
+            </div>
+        </div>
+
+        <!-- Links Buttons List -->
+        <div class="space-y-3 pt-2">
+
+            <!-- Link 1: Instagram -->
+            <a href="https://www.instagram.com/mjr__real?obrf=cW5wb3BjYnN1NTJz&utm_source=qr" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between w-full px-4 py-3.5 bg-slate-800/80 hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 text-slate-200 hover:text-white rounded-xl border border-slate-700/60 hover:border-pink-500 font-semibold text-sm transition-all duration-200 transform hover:-translate-y-0.5 shadow-lg group">
+                <span class="flex items-center gap-3">
+                    <span class="text-lg">📸</span>
+                    <span>Instagram (@mjr__real)</span>
+                </span>
+                <span class="text-xs opacity-60 group-hover:translate-x-0.5 transition-transform">↗</span>
+            </a>
+
+            <!-- Link 2: TikTok -->
+            <a href="https://www.tiktok.com/@mjr.ofc7" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between w-full px-4 py-3.5 bg-slate-800/80 hover:bg-slate-700 hover:text-white text-slate-200 rounded-xl border border-slate-700/60 font-semibold text-sm transition-all duration-200 transform hover:-translate-y-0.5 shadow-lg group">
+                <span class="flex items-center gap-3">
+                    <span class="text-lg">🎵</span>
+                    <span>TikTok (@mjr.ofc7)</span>
+                </span>
+                <span class="text-xs opacity-60 group-hover:translate-x-0.5 transition-transform">↗</span>
+            </a>
+
+            <!-- Link 3: LinkedIn -->
+            <a href="https://www.linkedin.com/in/junior-mane-343b79437" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between w-full px-4 py-3.5 bg-slate-800/80 hover:bg-sky-600 text-slate-200 hover:text-white rounded-xl border border-slate-700/60 hover:border-sky-500 font-semibold text-sm transition-all duration-200 transform hover:-translate-y-0.5 shadow-lg group">
+                <span class="flex items-center gap-3">
+                    <span class="text-lg">💼</span>
+                    <span>Perfil Profissional no LinkedIn</span>
+                </span>
+                <span class="text-xs opacity-60 group-hover:translate-x-0.5 transition-transform">↗</span>
+            </a>
+
+            <!-- Link 4: WhatsApp -->
+            <a href="https://wa.me/5588994826554" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between w-full px-4 py-3.5 bg-slate-800/80 hover:bg-emerald-600 text-slate-200 hover:text-white rounded-xl border border-slate-700/60 hover:border-emerald-500 font-semibold text-sm transition-all duration-200 transform hover:-translate-y-0.5 shadow-lg group">
+                <span class="flex items-center gap-3">
+                    <span class="text-lg">💬</span>
+                    <span>Falar no WhatsApp Directo</span>
+                </span>
+                <span class="text-xs opacity-60 group-hover:translate-x-0.5 transition-transform">↗</span>
+            </a>
+
+        </div>
+
+        <!-- Share Button & Footer -->
+        <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+            <span class="text-[11px] text-slate-500">© Junior Mané • 2026</span>
+            <button onclick="copySiteLink()" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs rounded-lg border border-slate-700 font-medium transition flex items-center gap-1.5">
+                <span>📋</span>
+                <span id="copy-btn-text">Copiar Link</span>
+            </button>
+        </div>
+<!-- ... existing code -->
